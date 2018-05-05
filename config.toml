@@ -1,0 +1,45 @@
+baseURL = "https://kavenc.site/"
+languageCode = "zh-tw"
+hasCJKLanguage = true
+author = "KavenC"
+title = "KavenC 開發筆記"
+theme = "blackburn"
+canonifyurls = true
+paginate = 10
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[params]
+  disqus = "kavenc-note"
+  dateFormat = "02 Jan 2006, 15:04"
+  custom_css = ["css/custom.css"]
+  highlightjs = "vs2015"
+  highlightjs_extra_languages = ["bash", "python"]
+  brand = "KavenC"
+
+[social]
+  github = "kavenc"
+  linkedin = "chun-kai-chou-8b49aa25"
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 3
+    identifier = "about"
+    url = "/about/"
