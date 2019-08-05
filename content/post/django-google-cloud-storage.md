@@ -27,7 +27,7 @@ description: Django Upload File to Google Cloud Storage
 
 有了免費試用資格後，接著進入[專案資料夾](https://console.cloud.google.com/project)，並建立一個新專案。
 
-{{<fluid_imgs "pure-u-1-1|/images/gcp-new-project.png">}}
+![GCP New Project](/images/gcp-new-project.png")
 
 這邊要稍微注意一下，輸入專案名稱並按確定以後，需要大約一分鐘的時間專案才會建立完成，如果出來看到列表還是空的，一分鐘過後再重新整理試試。
 
@@ -35,7 +35,7 @@ description: Django Upload File to Google Cloud Storage
 
 在管理介面中點選**建立Bucket**新增一個Bucket，Google Cloud Storage的儲存空間稱作一個Bucket。
 
-{{<fluid_imgs "pure-u-1-1|/images/gcp-class.png">}}
+![GCP Class](/images/gcp-class.png")
 
 設定你喜歡的Bucket名稱，選擇Regional Class，並且選擇地區us-west-1。為什麼要這樣選呢，因為這個組合有5GB免費額度。要注意的是，雖然Bucket等級日後也可以更改，但是更改以後只會影響到更改後上傳的檔案，原本在bucket中的檔案還是屬於原本的級別。如果不要求免費的話，建議還是參考一下[每個等級的差異以及收費標準]
 (https://cloud.google.com/storage/docs/storage-classes?hl=zh_TW&_ga=1.187665824.922289185.1491723424)，為你的網站慎重選擇一個適合的級別。
@@ -53,7 +53,7 @@ Bucket建立好以後就可以透過管理介面上傳下載檔案了。不過�
 - 提供一組新的私密金鑰
     - 這個JSON檔案將會是我們網站用來認證Storage存取權限的金鑰，服務帳號建立完成後請妥善保存
 
-{{<fluid_imgs "pure-u-1-1|/images/gcp-service-account.png">}}
+![GCP Service Account](/images/gcp-service-account.png")
 
 ## Django Storage Class 實作
 剛開始用`Django Google Cloud Storage`在Google找了一下沒看到現成的module可以使用，大部分都只適用於架設在Google Cloud Platform上的網站。後來才在reddit看到詢問Google Cloud Storage Django module的文章，並且在回覆中有人分享了他的成品：[django-gcloud-storage](https://github.com/strayer/django-gcloud-storage)

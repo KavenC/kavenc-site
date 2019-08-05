@@ -1,9 +1,9 @@
-baseURL = "https://kavenc.site/"
+baseURL = "https://kavenc.github.io/"
 languageCode = "zh-tw"
 hasCJKLanguage = true
 author = "KavenC"
 title = "KavenC 開發筆記"
-theme = "blackburn"
+theme = "hugo-whisper-theme"
 canonifyurls = true
 paginate = 10
 
