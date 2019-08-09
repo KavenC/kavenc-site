@@ -1,45 +1,37 @@
 baseURL = "https://kavenc.github.io/"
 languageCode = "zh-tw"
 hasCJKLanguage = true
-author = "KavenC"
 title = "KavenC 開發筆記"
-theme = "hugo-whisper-theme"
-canonifyurls = true
-paginate = 10
+theme = "angels-ladder"
 
-[indexes]
-  tag = "tags"
-  topic = "topics"
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
+rssLimit = 10
+enableEmoji = true
+disqusShortname = "kavenc-note"
+
+[author]
+  name = "KavenC"
 
 [params]
-  disqus = "kavenc-note"
-  dateFormat = "02 Jan 2006, 15:04"
-  custom_css = ["css/custom.css"]
-  highlightjs = "vs2015"
-  highlightjs_extra_languages = ["bash", "python"]
-  brand = "KavenC"
+  copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.'
+  dateform = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+  subtitle = "Yet another boring blog, even in 2019."
 
-[social]
-  github = "kavenc"
-  linkedin = "chun-kai-chou-8b49aa25"
+  [[params.social]]
+    name = "gitlab"
+    url = "https://gitlab.com/kavenc"
 
 [menu]
-  # Shown in the side menu.
+
   [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 1
-    identifier = "home"
-    url = "/"
+    name = "posts"
+    url = "index.html"
+
   [[menu.main]]
-    name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 2
-    identifier = "post"
-    url = "/post/"
-  [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 3
-    identifier = "about"
-    url = "/about/"
+    name = "about"
+    url = "about/"
